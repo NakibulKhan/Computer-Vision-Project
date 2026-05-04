@@ -1,0 +1,70 @@
+# ============================================================
+# BRISC 2025 — Brain Tumor Multitask Learning
+# CSE 468 Project — Python Dependencies
+# ============================================================
+# Install with: pip install -r requirements.txt
+#
+# NOTE: Install PyTorch separately first (CUDA version depends
+# on your hardware). See: https://pytorch.org/get-started/locally/
+#
+# For CUDA 11.8:
+#   pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu118
+# For CUDA 12.1:
+#   pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu121
+# For CPU only:
+#   pip install torch torchvision torchaudio
+# ============================================================
+
+# ── Core Deep Learning ─────────────────────────────────────
+# torch>=2.0.0          # Install separately (see above)
+# torchvision>=0.15.0   # Install separately (see above)
+# torchaudio>=2.0.0     # Install separately (see above, optional)
+
+# ── Segmentation Models (SMP) ──────────────────────────────
+# Used in: 468-updated-project.ipynb, _brain_multitask_colab_.ipynb
+segmentation-models-pytorch>=0.3.3
+
+# ── Image Augmentation ─────────────────────────────────────
+# Used in: 468-updated-project.ipynb, BRISC_Custom_UNet_Multitask_Colab_468.ipynb
+albumentations>=1.3.0
+
+# ── Computer Vision ────────────────────────────────────────
+# Used in: 468-updated-project.ipynb, BRISC_Custom_UNet_Multitask_Colab_468.ipynb
+opencv-python-headless>=4.7.0   # Use opencv-python if you need display
+
+# ── Data Science & ML ──────────────────────────────────────
+numpy>=1.23.0
+pandas>=1.5.0
+scikit-learn>=1.2.0
+scipy>=1.10.0
+
+# ── Image Processing ───────────────────────────────────────
+Pillow>=9.4.0
+
+# ── Visualization ──────────────────────────────────────────
+matplotlib>=3.7.0
+seaborn>=0.12.0
+
+# ── Progress Bars ──────────────────────────────────────────
+tqdm>=4.65.0
+
+# ── Pretrained Model Hub ───────────────────────────────────
+# Used in: BRISC_Custom_UNet_Multitask_Colab_468.ipynb (EfficientNet encoder)
+timm>=0.9.0
+
+# ── Kaggle Dataset Download ────────────────────────────────
+# Used in: all notebooks (dataset download)
+kagglehub>=0.2.0
+
+# ── Dimensionality Reduction (optional, for UMAP plots) ────
+# Used in: BRISC_Custom_UNet_Multitask_Colab_468.ipynb
+umap-learn>=0.5.3
+
+# ── Jupyter Notebook Support ───────────────────────────────
+ipykernel>=6.0.0
+ipywidgets>=8.0.0
+jupyter>=1.0.0
+
+# ── Utilities ──────────────────────────────────────────────
+# Standard library — no install needed:
+#   os, sys, random, glob, copy, gc, warnings, hashlib, math
